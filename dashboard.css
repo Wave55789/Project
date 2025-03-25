@@ -1,0 +1,515 @@
+body {
+    font-family: Arial, sans-serif;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   
+    
+}
+.dashboard {
+    max-width: 900px;
+    
+    background-color: #f3f3f7;
+    
+    padding-left: 20px;
+    padding-right: 20px;
+   
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+header p{
+    color: #54577a;
+}
+.profile {
+    
+    display: flex;
+    align-items: center;
+    gap: px;
+}
+.profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.header-icons {
+    display: flex;
+    gap: 10px;
+    margin-left: 500px;
+    
+}
+
+.taskContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.task-card {
+    background: #13131A;
+    color: white;
+    width: 100px;
+    height: 125px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.task-title {
+    font-size: 14px;
+    margin: 0;
+    color: #A0A0B0;
+}
+
+.task-number {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.task-progress {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.progress-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    background: conic-gradient(#4A5CF4 45%, #25253A 45%);
+}
+
+.progress-circle span {
+    position: absolute;
+    color: white;
+}
+
+.task-total {
+    text-align: center;
+    
+}
+
+.task-total h2 {
+    margin: 0;
+    font-size: 18px;
+}
+
+.task-total p {
+    margin: 0;
+    font-size: 12px;
+    color: #A0A0B0;
+}
+
+
+.card {
+    background: #EBEDF7;
+    border-radius: 12px;
+    padding: 20px;
+    width: 450px;
+    height: 125px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.Activity {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.chart {
+    position: relative;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.line {
+    width: 90%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    position: relative;
+}
+.point {
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    border: 3px solid blue;
+    border-radius: 50%;
+    top: -8px;
+    left: 20%;
+}
+.tooltip {
+    position: absolute;
+    top: -40px;
+    left: 15%;
+    background: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 6px;
+    display: none;
+}
+.point:hover + .tooltip {
+    display: block;
+}
+
+.mentorContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding-top: 30px;
+   height: 36px;
+}
+.title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #111;
+}
+.arrows {
+    display: flex;
+    gap: 10px;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.arrow img {
+    width: 100%;
+    height: auto;
+}
+.mentorSection{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    height: 140px;
+}
+.mentorCard {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.mentorCard-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Mentorprofile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Mentorprofile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name {
+    font-weight: bold;
+}
+.follow {
+    color: blue;
+    font-size: 14px;
+    cursor: pointer;
+}
+.followed {
+    color: grey;
+}
+.details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+/* upcoming task */
+.UpcomingTask-container {
+    display: flex;
+    gap: 20px;
+    padding-top: 30px;
+    height: 314px;
+}
+
+.Upcoming-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 310px;
+    cursor: pointer;
+}
+
+.Upcoming-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+.card h3 {
+    margin: 15px 0 5px;
+    font-size: 18px;
+}
+.Upcoming-card p {
+    color: gray;
+    font-size: 14px;
+}
+.progress-bar {
+    margin: 10px 0;
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 8px;
+    position: relative;
+}
+.Upcoming-progress {
+    height: 100%;
+    border-radius: 10px;
+    background: #5b69e3;
+}
+.progress-text {
+    text-align: right;
+    font-size: 14px;
+    font-weight: bold;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+}
+.avatars {
+    display: flex;
+}
+.avatars img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+.avatars img:first-child {
+    margin-left: 0;
+}
+/* upcoming task end */
+
+/* TaskToday */
+
+.Task-today{
+    
+    width: 600px;
+    justify-items: center;
+    background-color: #eaeaf0 ;
+}
+.calendar {
+    background: white;
+    padding: 20px;
+    margin-top: 15px;
+    
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 279px;
+}
+.CalendarHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.month {
+    font-size: 18px;
+    font-weight: bold;
+}
+.arrow {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.days {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+.day {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+    padding: 5px 0;
+}
+.day.current {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+}
+.day.current span {
+    background-color: blue;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+.taskContainer {
+    width: 280px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 16px;
+    margin-top: 20px;
+    height: 670px;
+}
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+.menu {
+    cursor: pointer;
+}
+h3{
+    font-size: 15px;
+}
+.role{
+    padding-top: 0;
+}
+.profile{
+    font-size: 10px;
+}
+.task-image img {
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+.task-content {
+    margin-top: 16px;
+}
+
+.percent{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+}
+.taskProgressSection {
+    
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.taskProgressBar {
+    width: 100%;
+    background: #e0e0e0;
+    border-radius: 10px;
+    height: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 10px;
+}
+.taskProgress {
+    height: 100%;
+    background: #4a90e2;
+    width: 90%;
+}
+.time-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+.time{
+    display: flex;
+    gap:3px;
+}
+
+.timeavatars {
+    display: flex;
+}
+.timeavatars img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-left: -10px;
+}
+.timeavatars img:first-child {
+    margin-left: 0;
+}
+.hour{
+    padding-top: 2px;
+}
+
+.detail-task{
+    margin-top: 30px;
+    }
+
+.task-image{
+    margin-top: 15px;
+}
+
+.detail-task ul {
+    list-style: none;
+    padding: 0;
+    
+}
+.detail-task li {
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 6px 0;
+    line-height: 1.5;
+}
+.detail-task li span {
+    background: #e0e0e0;
+    padding: 4px 8px;
+    border-radius: 3px;
+    
+}
+.btn-detail {
+    width: 100%;
+    padding: 10px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 70px;
+}
+.btn-detail:hover {
+    background: #357abd;
+}

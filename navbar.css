@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-items: center;
+}
+
+.sidebar {
+    width: 252px;
+    height: 100vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+.title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav {
+    list-style: none;
+    padding: 0;
+    padding-left: 100px;
+    width: 100%;
+    justify-content: center;
+    justify-content: center;
+}
+
+.nav li {
+    width: 100%;
+    padding: 10px 20px;
+    padding-top: 20px;
+}
+
+.nav li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+
+.nav li a img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+/* .nav li.active {
+    background: #e0e0e0;
+    border-radius: 8px;
+} */
+
+
+.help-center-card {
+    background: #13131A;
+    color: white;
+    width: 100px;
+    
+    padding: 20px;
+    margin-top: 280px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.help-icon {
+    background: black;
+    width: 40px;
+    height: 40px;
+    border: 3px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin-top: 30px;
+    font-size: 16px;
+}
+
+p {
+    font-size: 9px;
+    margin: 10px 0;
+}
+
+button {
+    background: white;
+    color: black;
+    border: none;
+    
+    
+    border-radius: 6px;
+    font-size: 12px;
+    cursor: pointer;
+    width: 100px;
+    
+    margin-top: 20px;
+}
+
+button:hover {
+    background: #ddd;
+}
+
+/* .help-center {
+    margin-top: auto;
+    text-align: center;
+    padding: 20px;
+    background: #141522;
+    color: #fff;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.help-center .help-icon img {
+    width: 30px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.help-center p {
+    font-size: 12px;
+    margin: 10px 0;
+    padding-top: px;
+}
+
+.help-center button {
+    background: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.help-center button:hover {
+    background: #ddd;
+} */

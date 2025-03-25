@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <div id="nav-container"></div> <!-- Navbar will be inserted here -->
+    <script src="loadNavbar.js"></script>
+    <div class="dashboard">
+        <header>
+            <div>
+                <h2>Hi, Skylar Dias</h2>
+                <p>Let's finish your task today!</p>
+            </div>
+            <div class="header-icons">
+            <div >
+                <img src="assets/notif.png" alt="notification">
+            </div>
+            <div class="profile">
+                <img src="assets/Profil.png" alt="Profile Picture">
+            </div>
+            </div>
+        </header>
+        <div class="taskContent">
+        <div class="task-card">
+            <p class="task-title">Running Task</p>
+            <h1 class="task-number">65</h1>
+    
+            <div class="task-progress">
+                <div class="progress-circle">
+                    <span>45%</span>
+                </div>
+                <div class="task-total">
+                    <h2>100</h2>
+                    <p>Task</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="Activity">
+                <span>Activity</span>
+                <span>This Week <img src="assets/arrow-down.png" alt="arrow-down"></span>
+            </div>
+            <div class="chart">
+                <div class="line">
+                    <div class="point"></div>
+                    <div class="tooltip">2 Task</div>
+                </div>
+                
+            </div>
+        </div>
+        </div>
+        <div class="mentorContainer">
+            <span class="title">Monthly Mentors</span>
+            <div class="arrows">
+                <span class="arrow"><img src="assets/arrow-left.png" alt="Left Arrow"></span>
+                <span class="arrow"><img src="assets/arrow-right.png" alt="Right Arrow"></span>
+            </div>
+        </div>
+        <section class="mentorSection">
+        <div class="mentorCard">
+            <div class="mentorCard-header">
+                <div class="Mentorprofile">
+                    <img src="assets/Photo.png" alt="Profile Picture">
+                    <div>
+                        <div class="name">Curious George</div>
+                        <div class="designation">UI UX Design</div>
+                    </div>
+                </div>
+                <div class="follow">+ Follow</div>
+            </div>
+            <div class="details">
+                <div class="icon"><img src="assets/note-2.png" alt="Task Icon"> 40 Task</div>
+                <div class="icon"><img src="assets/Star 1.png" alt="Star Icon"> 4.7 (750 Reviews)</div>
+            </div>
+        </div>
+        
+        <div class="mentorCard">
+            <div class="mentorCard-header">
+                <div class="Mentorprofile">
+                    <img src="assets/Photo (1).png" alt="Profile Picture">
+                    <div>
+                        <div class="name">Abraham Lincoln</div>
+                        <div class="designation">3D Design</div>
+                    </div>
+                </div>
+                <div class="follow followed">Followed</div>
+            </div>
+            <div class="details">
+                <div class="icon"><img src="assets/note-2.png" alt="Task Icon"> 32 Task</div>
+                <div class="icon"><img src="assets/Star 1.png" alt="Star Icon"> 4.9 (510 Reviews)</div>
+            </div>
+        </div>
+         </section>
+         <div class="mentorContainer">
+            <span class="title">Upcoming Task</span>
+            <div class="arrows">
+                <span class="arrow"><img src="assets/arrow-left.png" alt="Left Arrow"></span>
+                <span class="arrow"><img src="assets/arrow-right.png" alt="Right Arrow"></span>
+            </div>
+        </div>
+        <div class="UpcomingTask-container">
+            <div class="Upcoming-card">
+                <img src="assets/Image.png" alt="Task Image">
+                <h3>Creating Mobile App Design</h3>
+                <p>UI UX Design</p>
+                <div class="progress-text">75%</div>
+                <div class="progress-bar">
+                    <div class="Upcoming-progress" style="width: 75%;"></div>
+                </div>
+                <div class="footer">
+                    <span>&#128337; 3 Days Left</span>
+                    <div class="avatars">
+                        <img src="assets/Photo 1.png" alt="Avatar">
+                        <img src="assets/Photo 2.png" alt="Avatar">
+                        <img src="assets/Photo 3.png" alt="Avatar">
+                        <img src="assets/Photo 4.png" alt="Avatar">
+                        <img src="assets/Photo 5.png" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="Upcoming-card">
+                <img src="assets/Image (1).png" alt="Task Image">
+                <h3>Creating Perfect Website</h3>
+                <p>Web Developer</p>
+                <div class="progress-text">85%</div>
+                <div class="progress-bar">
+                    <div class="Upcoming-progress" style="width: 85%;"></div>
+                </div>
+                <div class="footer">
+                    <span>&#128337; 4 Days Left</span>
+                    <div class="avatars">
+                        <img src="assets/Photo 3.png" alt="Avatar">
+                        <img src="assets/Photo 1.png" alt="Avatar">
+                        <img src="assets/Photo 5.png" alt="Avatar">
+                        <img src="assets/Photo 2.png" alt="Avatar">
+                        <img src="assets/Photo 4.png" alt="Avatar">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="Task-today">
+        <div class="calendar">
+            <div class="CalendarHead">
+                <div class="arrow" id="prevIcon"><img src="assets/arrow-left.png" alt="arrowLeft"></div>
+                <div class="month" id="month">July 2024</div>
+                <div class="arrow" id="nextIcon"><img src="assets/arrow-right.png" alt="arrowRight"></div>
+            </div>
+            <div class="weekdays">
+                <div>S</div>
+                <div>M</div>
+                <div>T</div>
+                <div>W</div>
+                <div>T</div>
+                <div>F</div>
+                <div>S</div>
+            </div>
+            <div class="days" id="days"></div>
+        </div>
+
+    <div class="taskContainer">
+        <div class="task-header">
+            <p>Task Today</p>
+            <span class="menu"><img src="assets/more.png" alt=""></span>
+        </div>
+        <div class="task-image">
+            <img src="assets/Image4.png" alt="Task Image">
+        </div>
+        <div class="task-content">
+            <div>
+            <h3>Creating Awesome Mobile Apps</h3>
+            <p class="role">UI / UX Designer</p>
+            </div>
+            <div class="taskProgressSection">
+                <div class="percent">
+                <label>Progress</label>
+                <span>90%</span>
+                </div>
+                <div class="taskProgressBar">
+                    <div class="taskProgress"></div>
+                </div>
+            </div>
+            <div class="time-section">
+                <div class="time">
+                <p class="clock-icon">&#128337;</p>
+                <p class="hour">1 Hour</p>
+                </div>
+                <div class="timeavatars">
+                         <img src="assets/Photo 3.png" alt="Avatar">
+                        <img src="assets/Photo 1.png" alt="Avatar">
+                        <img src="assets/Photo 5.png" alt="Avatar">
+                        <img src="assets/Photo 2.png" alt="Avatar">
+                        <img src="assets/Photo 4.png" alt="Avatar">
+                </div>
+            </div>
+            <div class="detail-task">
+                <p>Detail Task</p>
+                <ul>
+                    <li><span>1</span> Understanding the tools in Figma</li>
+                    <li><span>2</span> Understand the basics of making designs</li>
+                    <li><span>3</span> Design a mobile application with Figma</li>
+                </ul>
+            </div>
+            <button class="btn-detail">Go To Detail</button>
+        </div>
+    </div>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const daysContainer = document.getElementById("days");
+            const monthContainer = document.getElementById("month");
+            
+            const today = new Date();
+            const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+            const currentMonth = monthNames[today.getMonth()];
+            const currentDate = today.getDate();
+            const currentYear = today.getFullYear();
+            
+            monthContainer.textContent = `${currentMonth} ${currentYear}`;
+            
+            let daysArray = [];
+            for (let i = today.getDate() - 3; i <= today.getDate() + 3; i++) {
+                daysArray.push(i);
+            }
+            
+            daysArray.forEach(day => {
+                let dayElement = document.createElement("div");
+                dayElement.classList.add("day");
+                if (day === currentDate) {
+                    dayElement.classList.add("current");
+                    dayElement.innerHTML = `<span>${day}</span>`;
+                } else {
+                    dayElement.textContent = day;
+                }
+                daysContainer.appendChild(dayElement);
+            });
+        });
+    </script>
+
+    </body>
+
+</body>
+</html>
