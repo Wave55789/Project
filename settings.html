@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="settings.css">
+    
+</head>
+<body>
+    <div>
+        <div id="nav-container"></div> <!-- Navbar will be inserted here -->
+         <script src="loadNavbar.js"></script>
+    </div>
+<div>
+    <div class="header">
+        <h2>Settings</h2>
+        <div class="header-icons">
+            <div class="notification">
+                <img src="assets/notif.png" alt="Notification">
+            </div>
+            <div class="profile">
+                <img src="assets/Profil.png" alt="Profile">
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="conHead">
+            <a href="#general">General</a>
+            <a href="">Notifications</a>
+        </div>
+        
+        <div id="general">
+        <label for="language">Language</label>
+        <select id="language">
+            <option>English (Default)</option>
+            <option>Spanish</option>
+            <option>French</option>
+            <option>German</option>
+            <option>Chinese</option>
+        </select>
+        
+        <label for="timezone">Timezone</label>
+        <select id="timezone">
+            <option>GMT</option>
+            <option>PST</option>
+            <option>EST</option>
+            <option>CET</option>
+            <option>IST</option>
+        </select>
+        
+        <label>Time Format</label>
+        <div class="timezone-options">
+            <input type="radio" id="24hours" name="timeformat" checked>
+            <label for="24hours">24 Hours</label>
+            
+            <input type="radio" id="12hours" name="timeformat">
+            <label for="12hours">12 Hours</label>
+        </div>
+        
+        <button class="save-button">Save Changes</button>
+        
+        </div>
+    </div>
+</div>
+</body>
+</html> 
